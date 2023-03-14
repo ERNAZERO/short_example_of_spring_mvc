@@ -1,0 +1,5 @@
+com\spectro\konf\controllers\DetailsController.class
+com\spectro\konf\models\Details.class
+com\spectro\konf\configuration\MySpringMvcDispatcherSerlvetIntitializer.class
+com\spectro\konf\configuration\SpringConfig.class
+com\spectro\konf\dao\DetailsDAO.class

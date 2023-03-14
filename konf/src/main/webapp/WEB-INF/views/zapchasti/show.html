@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Человек</title>
+</head>
+<body>
+<!--<p th:text="${her.getId()}">VALUE</p>-->
+<!--<p th:text = "${her.getName()}">VALUE</p>-->
+<!--<p th:text="${her.getType()}">VALUE</p>-->
+<!--<p th:text = "${her.getDate()}">VALUE</p>-->
+<!--<p th:text = "${her.getPrice()}">VALUE</p>-->
+<!--<p th:text="${her.getQuantity()}">VALUE</p>-->
+
+
+<p th:text="${her.getName()}">VALUE</p>
+<!--<p th:text="${'vypusk: ' + her.getVypusk()}">VALUE</p>-->
+<!--<p th:text="${her.getId()}">VALUE</p>-->
+
+
+<a th:href="@{/zapchasti/{id}/edit(id=${her.getId()})}">edit</a>
+
+
+<form th:method="DELETE" th:action="@{/zapchasti/{id}(id=${her.getId()})}">
+  <input type="submit" value="Delete"/>
+</form>
+</body>
+</html>
